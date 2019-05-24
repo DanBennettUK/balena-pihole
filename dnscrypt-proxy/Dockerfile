@@ -10,7 +10,7 @@ FROM klutchell/dnscrypt-proxy:2.0.23-arm
 ## The proxy will automatically pick the fastest, working servers from the list.
 ## Remove the leading # first to enable this; lines starting with # are ignored.
 
-ARG server_names="['scaleway-fr', 'cloudflare']"
+ARG server_names="['cloudflare']"
 
 # uncomment this line to use a custom servers list
 # RUN sed -r "s/^(# )?server_names = .+$/server_names = ${server_names}/" -i /config/dnscrypt-proxy.toml
